@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F8C0C6"
+    tools:context=".EditActivity">
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="8"
+        android:hint="Input name"
+        android:inputType="text"
+        android:background="@drawable/bg_edit"
+        android:padding="10dp"/>
+    <EditText
+        android:id="@+id/et_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Input title"
+        android:inputType="text"
+        android:background="@drawable/bg_edit"
+        android:padding="10dp"
+        android:layout_marginTop="8dp"/>
+
+    <EditText
+        android:id="@+id/et_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:hint="Input message"
+        android:background="@drawable/bg_edit"
+        android:padding="10dp"
+        android:gravity="top"
+        android:layout_marginTop="8dp"/>
+    <EditText
+        android:id="@+id/et_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="5"
+        android:inputType="number"
+        android:hint="Input price"
+        android:background="@drawable/bg_edit"
+        android:padding="10dp"
+        android:layout_marginTop="8dp"/>
+    <Button
+        android:id="@+id/btn_select_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Image"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/colorAccent"
+        android:layout_gravity="right"
+        android:onClick="clickSelectImage"/>
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/ic_image"
+        android:padding="8dp"
+        android:background="@drawable/bg_edit"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorAccent"
+        android:text="Complete"
+        android:textAllCaps="false"
+        android:onClick="clickComplete"/>
+
+</LinearLayout>

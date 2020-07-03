@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="8dp"
+    android:background="#8FFF"
+    android:layout_marginHorizontal="8dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/layout_iv"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        app:cardCornerRadius="8dp"
+        android:layout_marginBottom="10dp">
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/giphy"/>
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_toRightOf="@id/layout_iv"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Android Development"
+        android:textColor="#333"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:maxLines="1"/>
+    <TextView
+        android:id="@+id/tv_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_title"
+        android:layout_below="@id/tv_title"
+        android:maxLines="2"
+        android:layout_marginTop="4dp"
+        android:text="android app 을 만들어 드립니다."/>
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="500,000원"
+        android:textSize="14sp"
+        android:layout_alignLeft="@id/tv_title"
+        android:layout_below="@id/tv_msg"
+        android:textStyle="bold"
+        android:gravity="bottom"
+        android:layout_alignBottom="@id/layout_iv"/>
+    <ToggleButton
+        android:id="@+id/tb_money"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignParentRight="true"
+        android:textOff=" "
+        android:textOn=" "
+        android:layout_alignBaseline="@id/layout_iv"
+        android:layout_alignBottom="@id/layout_iv"
+        android:background="@drawable/bg_toggle"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:layout_alignParentBottom="true"
+        android:background="#DDD"/>
+
+</RelativeLayout>
